@@ -1,4 +1,5 @@
 acgobrien.github.io
 ===================
 
-my portfolio
+Amanda O'Brien's graphic design portfolio
+accessible at aobdny.com
