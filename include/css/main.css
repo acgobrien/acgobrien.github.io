@@ -1,4 +1,4 @@
-/*
+	/*
 Theme Name: Brushed 
 Theme URI: http://www.themes.alessioatzeni.com/html/brushed/
 Author: Alessio Atzeni
@@ -330,7 +330,9 @@ h3.spec {
 	font-size: 60px;
 	color: #FFFFFF;
 	letter-spacing: -3px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	max-height: 100% !important;
+	max-width: 	auto;
 }
 
 #home-slider .control-nav {
@@ -495,6 +497,7 @@ header .sticky-nav.stuck {
 	z-index: 1001;
 }
 
+
 header #logo {
 	color: #FFFFFF;
 	float: left;
@@ -502,10 +505,10 @@ header #logo {
 	margin-left: 20px;
 }
 
-header #logo a {
-	background: url(../img/logo.png) no-repeat;
-	width: 96px;
-	height: 30px;
+header #logo a{
+	background: url(.../img/logo_@2x.png) no-repeat;
+	width: 30px;
+	height: 10px;
 	text-indent: -9999px;
 	display: block;
 	opacity: 1;
@@ -988,49 +991,6 @@ nav#menu #menu-nav li a:hover {
 	color: #FFFFFF;
 }
 
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-#twitter-feed {
-	padding: 100px 0 90px;
-	text-align: center;	
-}
-
-#twitter-feed .follow {
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -8px;
-	font-size: 16px;	
-}
-
-#ticker .tweet_list {
-	margin: 0;
-	padding: 0;
-	height: 64px;
-	list-style: none;
-	overflow-y: hidden;	
-}
-
-#ticker .tweet_list li {
-	font-size: 18px;
-	height: 64px;
-	line-height: 28px;
-	overflow: hidden;
-}
-
-#ticker .tweet_list .tweet_time a {
-	color: #7f8289;
-	font-size: 14px;
-	font-style: italic;
-	margin-left: 10px;	
-}
-
-#ticker .tweet_list .tweet_time a:hover {
-	color: #FFFFFF;	
-}
 
 
 /* ==================================================

@@ -72,8 +72,8 @@
 }
 
 .fancybox-image {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 100% !important;
+	max-height: auto;
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
@@ -206,6 +206,33 @@
 	max-width: 99999px;
 	max-height: 99999px;
 	overflow: visible !important;
+}
+
+.fancybox-prev-inseries{
+	left: 20%;
+	font-size: 30px;
+	line-height: 1em;
+	position: absolute;
+	color: #DE5E60;
+	font-size: 14px;
+}
+
+.fancybox-next-inseries{
+	right: 25%;
+	font-size: 30px;
+	line-height: 1em;
+	position: absolute;
+	color: #DE5E60;
+	font-size: 14px;
+}
+
+.fancybox-divider{
+	left: 50%;
+	font-size: 30px;
+	line-height: 1em;
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 18px;
 }
 
 /* Overlay helper */
