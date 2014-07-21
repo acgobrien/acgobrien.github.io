@@ -506,7 +506,7 @@ header #logo {
 }
 
 header #logo a{
-	background: url(.../img/logo_@2x.png) no-repeat;
+	background: url(../img/logo_@2x.png) no-repeat;
 	width: 30px;
 	height: 10px;
 	text-indent: -9999px;
