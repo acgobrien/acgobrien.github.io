@@ -34,10 +34,10 @@ class Carousel extends Component {
       return (
         <div>
           <img src={this.getImage(idx)}/>
-          <span className={styles.idxbtn}
+          <span className={styles.idx-btn}
                 onClick={this.previousImage.bind(this)}>
                 previous </span>
-          <span className={styles.idxbtn}
+          <span className={styles.idx-btn}
                 onClick={this.nextImage.bind(this)}>
                 next </span>
         </div>
