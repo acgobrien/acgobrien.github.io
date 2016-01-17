@@ -50,8 +50,8 @@
     "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
   },
   "dependencies": {
+    "lost-grid": "^5.1.5",
     "normalize.css": "^3.0.3",
-    "react-addons-css-transition-group": "^0.14.2",
-    "simple-react-modal": "^0.4.7"
+    "react-addons-css-transition-group": "^0.14.2"
   }
 }

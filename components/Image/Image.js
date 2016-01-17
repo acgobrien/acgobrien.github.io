@@ -2,28 +2,25 @@
  * https://github.com/acgobrien/acgobrien.github.io
  * Copyright (c) Brandon Ogle (@blogle) | MIT license
  */
+import React from 'react';
+import Modal from '../Modal/Modal';
+import Carousel from '../Carousel/Carousel';
 
-import React, {Component} from 'react';
-import Modal from 'simple-react-modal';
-import 'simple-react-modal/dist/modal';
+const Image = ({className, thumb, images}) => {
+  const image = (
+    <img src={thumb}/>
+   );
 
-import './Image.scss';
+  const carousel = (
+    <Carousel gallery={images}/>
+  );
 
-export default class Image extends Component {
-    render() {
-      return (
-            <div>
-                <a onClick={this.refs.modal.show}>
-                    open modal
-                </a>
-                <Modal ref="modal"
-                       classname="simple-modal">
-                       <a className="close"
-                          onClick={()=>{this.refs.modal.hide();}}>
-                        X
-                       </a>
-                </Modal>
-            </div>
-        );
-    }
-}
+  return (
+    <Modal
+       className={className}
+       clickFrame={image}
+       content={carousel}/>
+  );
+};
+
+export default Image;

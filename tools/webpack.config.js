@@ -88,6 +88,7 @@ const config = {
       require('autoprefixer')({
         browsers: AUTOPREFIXER_BROWSERS,
       }),
+      require('lost-grid'),
     ];
   },
 };
