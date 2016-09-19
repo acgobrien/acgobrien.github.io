@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   color: #B6B6B7;
@@ -66,37 +66,8 @@ body{
 
 /* Header */
 
-#logo{
-  align-content: center;
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
 
-
-
-
-
-/* ----- about toggle ---- */
-
-/*.dropdown-toggle{
-  float: left;
-  margin-top:50px;
-  margin-left: 23px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 20px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  display: inline-block;
-  border-bottom:3px solid #ffffff
-}
-
-.dropdown-toggle:hover {
-  color: #767676;
-  border-bottom:3px solid #767676;
-}
-
-.toggle-content {
+/*.toggle-content {
   display: none;
   position: absolute;
   width: 800px; height: 419px;
@@ -109,11 +80,11 @@ body{
 }*/
 
 
-.about-image {
+/*.about-image {
   margin-top: 20px;
   /*margin-left: 43px;
   background-image: url("img/gallery/full/About/about.jpg");
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 800px;
   justify-content: center;
@@ -125,10 +96,15 @@ body{
   margin-top: 5%;
   text-decoration: none;
   list-style: none;
-}
+}*/
 
 /* ---- nav ---- */
 
+#logo{
+    align-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
 
 #nav {
   position: relative;
@@ -191,68 +167,18 @@ li {
   font-weight: 100;
 }
 
+/* --- end nav ---*/
+
 .resume {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   width: 100%;
-  max-width: 612px;
+  max-width: 1000px;
 }
 
 /*filters*/
-/*.menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;
-  height: 100%;
-  position: fixed;
-  width: 285px;
-}
-
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
-}
-
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.icon-menu i {
-  margin-right: 5px;
-}*/
 
 
 /*Work*/
