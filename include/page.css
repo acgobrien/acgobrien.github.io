@@ -90,12 +90,20 @@ li {
   display: inline-block;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 
 .descriptions {
-  background-color: #686868;
+  background-color: #ababab;
   height: 200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.descriptionsLG {
+  background-color: #ababab;
+  height: 250px;
   width: 100%;
   display: inline-block;
 }
@@ -182,7 +190,8 @@ p {
 .work-images1 {
   width: 100%;
   max-width: 700px;
-  margin: 0px;
+  margin-top: 3em;
+  margin-bottom: 3em;
   justify-content: center;
   flex-wrap: wrap;
   display: inline-flex;
@@ -191,7 +200,22 @@ p {
 .work-images2 {
   width: 100%;
   max-width: 916px;
-  margin: 0px;
+  margin-top: 3em;
+  margin-bottom: 3em;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 2em;
+right: 2em;
+width: 40px;
+height: 40px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #ffffff;
 }
