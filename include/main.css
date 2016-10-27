@@ -82,6 +82,8 @@ body {
 
 .about-image {
   margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
 }
   /*margin-left: 43px;
   background-image: url("img/gallery/full/About/about.jpg");
