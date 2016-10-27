@@ -80,8 +80,9 @@ body {
 }*/
 
 
-/*.about-image {
-  margin-top: 20px;
+.about-image {
+  margin-top: 40px;
+}
   /*margin-left: 43px;
   background-image: url("img/gallery/full/About/about.jpg");
   background-repeat: no-repeat;
@@ -174,7 +175,7 @@ li {
   justify-content: center;
   margin-top: 30px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 /*filters*/
@@ -191,22 +192,50 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  max-width: 1200px;
+  max-width: 1000px;
 }
+
 
 .gallery-item {
-  margin: 10px;
+  margin: 1px;
 }
 
-.gallery-item .thumbnail {
+.imgWrap {
+  position: relative;
+  width: 320px;
+  height: 225px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.75);
+  color: #767676;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*.gallery-item .thumbnail {
   border-bottom:4px solid #ffffff;
 }
 
 .gallery-item .thumbnail:hover {
   border-bottom:4px solid #767676;
-}
+  opacity: 0.5;
+  filter: alpha(opacity=60);
+}*/
 
-.thumb-titles {
+/*.thumb-titles {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 16px;
 	font-weight: 100;
@@ -214,11 +243,11 @@ a {
   letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
-}
+}*/
 
 /*Work Description*/
 
-
+/*
 .modal-background {
   display: none;
   position: fixed;
@@ -233,14 +262,10 @@ a {
   display: none;
   position: absolute;
   vertical-align: middle;
-  /*text-align: center;*/
   width: 100%;
   max-width: 1000px; height: 650px;
-  /*left: 50%;*/
-  /*margin: -325px 0 0 -500px;*/
   overflow: scroll;
   background-color: #ffffff;
-  /*justify-content: center;*/
 }
 
 .modal-background.active, .modal-content.active {
@@ -251,7 +276,7 @@ a {
 body.scroll-locked {
   overflow: hidden;
   height: 100%;
-}
+}*/
 
 .headers {
   /*justify-content: center;*/
@@ -269,7 +294,7 @@ body.scroll-locked {
   margin-top: 5px;
 }*/
 
-.modal-headers{
+/*.modal-headers{
   position: fixed;
   left: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
@@ -279,10 +304,9 @@ body.scroll-locked {
   margin-left: 1%;
   margin-top: 1.5%;
   display: inline;
-  /*float: left;*/
-}
+}*/
 
-.close {
+/*.close {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 17px;
   color: #B6B6B7;
@@ -306,7 +330,7 @@ body.scroll-locked {
   text-align: right;
   display: inline;
   margin-right: 20px;
-}
+}*/
 
 /*.process {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
