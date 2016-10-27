@@ -245,39 +245,6 @@ a {
   text-align: center;
 }*/
 
-/*Work Description*/
-
-/*
-.modal-background {
-  display: none;
-  position: fixed;
-  left: 0%; right: 0%;
-  top: 0%; bottom: 0%;
-  background-color: #000000;
-  opacity:.5;
-  justify-content: center;
-}
-
-.modal-content {
-  display: none;
-  position: absolute;
-  vertical-align: middle;
-  width: 100%;
-  max-width: 1000px; height: 650px;
-  overflow: scroll;
-  background-color: #ffffff;
-}
-
-.modal-background.active, .modal-content.active {
-  display: block;
-  justify-content: center;
-}
-
-body.scroll-locked {
-  overflow: hidden;
-  height: 100%;
-}*/
-
 .headers {
   /*justify-content: center;*/
   position: relative;
@@ -286,85 +253,6 @@ body.scroll-locked {
   max-width: 1000px;
   width: 100%;
 }
-
-/*.headers-image {
-  width: 100%;
-  max-width: 850px;
-  height: auto;
-  margin-top: 5px;
-}*/
-
-/*.modal-headers{
-  position: fixed;
-  left: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  margin-left: 1%;
-  margin-top: 1.5%;
-  display: inline;
-}*/
-
-/*.close {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 17px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  margin-right: 4%;
-  margin-top: 2.5%;
-  display: inline;
-  right: 0;
-  position: fixed;
-}
-
-.close:hover {
-  color: #767676;
-  border-bottom:3px solid #767676;
-}
-
-#modal-nav{
-  max-width: 1000px;
-  font-size: 20px;
-  text-align: right;
-  display: inline;
-  margin-right: 20px;
-}*/
-
-/*.process {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 17px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 15px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: .75;
-  margin-top: 22px;
-  position: fixed;
-  display: inline-flex;
-}*/
-
-/*.process:hover {
-  color: #767676;
-  border-bottom:3px solid #767676;
-}*/
-
-/*.descriptions {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 15px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-align: left;
-  margin-right: 47px;
-  margin-left: 45px;
-  margin-top: 110px;
-}*/
 
 .full-image {
   max-width: 700px;
