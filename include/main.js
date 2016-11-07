@@ -36,7 +36,6 @@ return false;
 
 });
 
-
   /*$(".modal, .modal-background").click(function() {
 
     // Lock the scroll bar while the modal is active

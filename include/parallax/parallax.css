@@ -12,66 +12,14 @@ body {
   width: 90%;
 }
 
+/* ------- nav bar ------ */
 
-/* ----- Landing ----- */
-
-
-.landing{
-  vertical-align: middle;
-}
-
-.grid-item {
-  /*display: block;*/
-}
-
-.landing-image {
-  margin-top: 5%;
-  width: 100%;
-  max-width: 1000px;
-  justify-content: center;
-}
-
-.site-button{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: 20px;
-  color: #B6B6B7;
-  text-decoration: none;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-align: center;
-  display: inline-block;
-}
-
-#home-page p {
-    opacity: 0;
-    -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in;
-}
-#home-page p.load {
-    opacity: 1;
-}
-
-#home-page p:hover {
-  color: #767676;
-  cursor: pointer;
-  border-bottom:3px solid #767676;
-}
-
-/* ----- Main ----- */
-
-
-/* ---- nav ---- */
-
-#logo{
-    align-content: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
+#Header {
+  height: 30px;
 }
 
 #nav {
+  margin-top: 80px;
   position: relative;
   font-size: 20px;
   text-align: center;
@@ -79,7 +27,7 @@ body {
 
 #nav:before, #nav:after {
     position: absolute;
-    top: 65%;
+    top: 79.75%;
     overflow: hidden;
     width: 50%;
     height: 1px;
@@ -131,10 +79,38 @@ li {
   font-weight: 100;
 }
 
-/* --- end nav ---*/
+.landing{
+  background-position: center;
+}
+
+.landing-image {
+  position: relative;
+  height: 737px;
+  /*width: 100%;
+  max-width: 1280px;*/
+  background-image: url("/include/img/landing/parallax/LandingPage_1000w.jpg");
+  background-size: auto 736px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.landing-logo{
+  height: 87px;
+  width: 100%;
+  background-image: url("/include/img/landing/Logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -160px;
+  align-content: center;
+}
 
 
-/*filters*/
+/*--- sidenav ---*/
 
 .sidebar-filters {
   /*position: fixed. 0px, 0, 0px, 0px;
@@ -152,72 +128,7 @@ li {
   text-align: left;
 }
 
-/*Work*/
-
-/*---------------*/
-/***** Marley *****/
-/*---------------*/
-
-/*figure.effect-marley figcaption {
-	text-align: right;
-}
-
-figure.effect-marley h2,
-figure.effect-marley p {
-	position: absolute;
-	right: 30px;
-	left: 30px;
-	padding: 10px 0;
-}
-
-
-figure.effect-marley p {
-	bottom: 30px;
-	line-height: 1.5;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-}
-
-figure.effect-marley h2 {
-	top: 30px;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-}
-
-figure.effect-marley:hover h2 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-marley h2::after {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	background: #fff;
-	content: '';
-	-webkit-transform: translate3d(0,40px,0);
-	transform: translate3d(0,40px,0);
-}
-
-figure.effect-marley h2::after,
-figure.effect-marley p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-marley:hover h2::after,
-figure.effect-marley:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}*/
-
-/* end Marley */
+/*--- thumbnails ---*/
 
 a {
   text-decoration: none;
@@ -261,13 +172,13 @@ a {
   opacity: 1;
 }
 
-.headers {
+/*.headers {
   position: relative;
   background-color: white;
   height: 60px;
   max-width: 1000px;
   width: 100%;
-}
+}*/
 
 .full-image {
   max-width: 700px;
@@ -296,23 +207,4 @@ z-index: 100;
 display: none;
 text-decoration: none;
 color: #ffffff;
-}
-
-/* about page */
-
-.about-image {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 800px;
-}
-
-/* resume page */
-
-.resume {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-  width: 100%;
-  max-width: 900px;
 }
