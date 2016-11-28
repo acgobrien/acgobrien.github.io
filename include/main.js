@@ -36,6 +36,32 @@ return false;
 
 });
 
+//-------------  sticky nav  ---------------
+
+var ll = $(".landing-logo"),
+    lls = "landing-logo-scroll",
+    ldi = $(".landing-image").height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() >= ldi / 2) {
+    ll.addClass(lls);
+  } else {
+    ll.removeClass(lls);
+  }
+});
+
+var nv = $("#nav"),
+    nvs = "nav-scroll";
+
+$(window).scroll(function() {
+  // console.log($(this).scrollTop(), ldi * 1, $(this).scrollTop() > ldi * 1)
+  if( $(this).scrollTop() > ldi * 1) {
+    nv.addClass(nvs);
+  } else {
+    nv.removeClass(nvs);
+  }
+});
+
   /*$(".modal, .modal-background").click(function() {
 
     // Lock the scroll bar while the modal is active

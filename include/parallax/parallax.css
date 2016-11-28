@@ -7,25 +7,45 @@ body {
   font-style: normal;
   font-weight: 100;
   line-height: 1.45;
-  left: 0;
-  margin: 0 auto;
-  width: 90%;
+
+  /* Force the page to 100% width
+  This sweeps the real problem under the rug...
+  Should really find the culprit that is the element
+  that is forcing the content larger than 100%
+  */
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* ------- nav bar ------ */
 
 #Header {
-  height: 30px;
+  /*height: 30px;*/
+}
+
+.nav-scroll{
+  position: fixed;
+  top: 0em;
+  text-align: center;
+  z-index: 0;
+  width: 100%;
 }
 
 #nav {
-  margin-top: 80px;
-  position: relative;
-  font-size: 20px;
+  /*margin-top: 80px;*/
+  /*position: relative;*/
+  font-size: 1em;
   text-align: center;
+  z-index: 1;
+  margin-top: 0px;
+  background-color: white;
+  height: 3.25em;
+  padding-top: 5.5em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
-#nav:before, #nav:after {
+/*#nav:before, #nav:after {
     position: absolute;
     top: 79.75%;
     overflow: hidden;
@@ -37,7 +57,7 @@ body {
 #nav:before {
     margin-left: -50%;
     text-align: center;
-}
+}*/
 
 ul {
   justify-content: center;
@@ -85,36 +105,50 @@ li {
 
 .landing-image {
   position: relative;
-  height: 737px;
+  height: 604px;
   /*width: 100%;
   max-width: 1280px;*/
-  background-image: url("/include/img/landing/parallax/LandingPage_1000w.jpg");
-  background-size: auto 736px;
+  background-image: url("/include/img/landing/parallax/LandingPage_1280w.jpg");
+  background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-repeat: no-repeat;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 
-.landing-logo{
-  height: 87px;
+.landing-logo {
+  /*-webkit-margin-start: .5em;*/
+  height: 4em;
   width: 100%;
   background-image: url("/include/img/landing/Logo.png");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 50%;
-  margin-top: -160px;
-  align-content: center;
+  top: 20em;
+  left: 0;
+  /*padding-right: 0em;
+  padding-left: 0em;*/
+  margin-left: .5em;
+  /*margin-right: .5em;*/
+
+  /*margin: -160px;*/
+  z-index: 150;
+}
+
+.landing-logo-scroll{
+  position: fixed;
+  top: 1em;
+  left: 0;
+
 }
 
 
 /*--- sidenav ---*/
 
-.sidebar-filters {
-  /*position: fixed. 0px, 0, 0px, 0px;
-  z-index: 0;*/
+/*.sidebar-filters {
+  position: fixed. 0px, 0, 0px, 0px;
+  z-index: 0;
 }
 
 .sidebar {
@@ -126,7 +160,7 @@ li {
   display: block;
   text-decoration: none;
   text-align: left;
-}
+}*/
 
 /*--- thumbnails ---*/
 
@@ -138,7 +172,7 @@ a {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 0em;
   max-width: 1000px;
   z-index: 0;
 }
