@@ -51,16 +51,21 @@ $(window).scroll(function() {
 });
 
 var nv = $("#nav"),
-    nvs = "nav-scroll";
+    nvs = "nav-scroll",
+    gallery = $(".gallery"),
+    galpad = "gallery-padding";
 
 $(window).scroll(function() {
-  // console.log($(this).scrollTop(), ldi * 1, $(this).scrollTop() > ldi * 1)
+
   if( $(this).scrollTop() > ldi * 1) {
     nv.addClass(nvs);
+    gallery.addClass(galpad);
   } else {
     nv.removeClass(nvs);
+    gallery.removeClass(galpad);
   }
 });
+
 
   /*$(".modal, .modal-background").click(function() {
 

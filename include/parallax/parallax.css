@@ -63,11 +63,11 @@ ul {
   justify-content: center;
   display: block;
   list-style-type: disc;
-  -webkit-margin-before: 1em;
+  /*-webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
+  -webkit-padding-start: 0px;*/
 }
 
 li {
@@ -173,8 +173,12 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0em;
-  max-width: 1000px;
+  max-width: 80em;
   z-index: 0;
+}
+
+.gallery-padding {
+  padding-top: 156px;
 }
 
 .gallery-item {

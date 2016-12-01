@@ -71,7 +71,7 @@ body {
     margin-bottom: 20px;
 }
 
-#nav {
+/*#nav {
   position: relative;
   font-size: 20px;
   text-align: center;
@@ -89,7 +89,7 @@ body {
 #nav:before {
     margin-left: -50%;
     text-align: center;
-}
+}*/
 
 ul {
   justify-content: center;
@@ -136,9 +136,9 @@ li {
 
 /*filters*/
 
-.sidebar-filters {
+/*.sidebar-filters {
   /*position: fixed. 0px, 0, 0px, 0px;
-  z-index: 0;*/
+  z-index: 0;
 }
 
 .sidebar {
@@ -150,7 +150,7 @@ li {
   display: block;
   text-decoration: none;
   text-align: left;
-}
+}*/
 
 /*Work*/
 
