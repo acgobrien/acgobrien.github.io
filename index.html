@@ -4,27 +4,280 @@
     <title>Amanda O'Brien Portfolio</title>
 
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="include/main.css"/>
+    <link rel="stylesheet" type="text/css" href="include/parallax/parallax.css"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="include/main.js"></script>
-
-    <!-- mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="MobileOptimized" content="320"/>
 
   </head>
 
   <body>
-    <div class="landing">
-      <div class="grid-item">
-        <img class="landing-image" src="include/img/landing/LandingPage_1000w.jpg" alt="LandingPage" srcset="include/img/landing/LandingPage_320w.jpg 320w, include/img/landing/LandingPage_640w.jpg 640w, include/img/landing/LandingPage_1280w.jpg 1280w">
-      </div>
 
-      <a href="work.html" class="site-button">
-        <div id= "home-page"><p>enter site</p>
-        </div>
-      </a>
+    <!-- nav -->
+
+    <div id="Header">
+
     </div>
-    
+
+    <div class="landing">
+        <div class="landing-image"></div>
+        <div class="landing-logo"></div>
+    </div>
+
+    <ul id="nav">
+      <li><a href="work.html" class="nav-words-active">work</a></li>
+
+      <li><a href="resume.html" class="nav-words">resume</a></li>
+
+      <li><a href="about.html" class="nav-words">about</a></li>
+    </ul>
+
+
+    <!-- side filters -->
+
+    <!-- /*<style>
+
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: white;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+          font-size: 17px;
+          color: #686868;
+          text-decoration: none;
+          /*font-weight: bolder;*/
+      }
+
+      .sidenav a {
+          padding: 8px 0px 8px 0px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #B6B6B7;
+          display: block;
+          transition: 0.3s
+      }
+
+      .sidenav a:hover, .offcanvas a:focus{
+          color: #767676;
+      }
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 25px;
+          margin-left: 60px;
+      }
+
+      #main {
+          transition: margin-left .5s;
+          padding: 0px;
+          text-align: left;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#"><img src="include/img/Logo_LOccitane.png"></a>
+      <a href="#"><img src="include/img/LOGO_ERBORIAN.png"></a>
+      <a href="#"><img src="include/img/Logo_LCDM.jpg"></a>
+      <a href="#">Digital</a>
+      <a href="#">Print</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>*/ -->
+
+    <!-- gallery-items -->
+
+    <div class="gallery">
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="SpaLOccitane.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/SpaLOccitane_V3.jpg" alt="polaroid"/>
+              <p class="imgDescription">spa l'occitane email</p>
+            </a>
+
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="ErborianBBCard.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/BBThumb_V3.jpg"/>
+              <p class="imgDescription">erborian bb cream training card</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="ErborianCCCard.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/CCThumb_V3.jpg"/>
+              <p class="imgDescription">erborian cc cream training card</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="ErborianSignage.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/ErborianSignageThumb_V3.jpg"/>
+              <p class="imgDescription">erborian signage</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="LCDMAutumnSignage.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/LCDMSignageThumb_V3.jpg"/>
+              <p class="imgDescription">le couvent des minimes signage</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="DSDigitalAd.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/DisneyDigitalAdThumb_V3.jpg"/>
+              <p class="imgDescription">disney springs digital ads</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="harmonieMailer.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/HarmonyThumb_V3.jpg"/>
+              <p class="imgDescription">divine harmony mailer</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="LCDMMailer.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/LCDMMailerThumb_V3.jpg"/>
+              <p class="imgDescription">le couvent des minimes mailer</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="OilMailer.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/OilMailerThumb_V3.jpg"/>
+              <p class="imgDescription">oil mailer</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="naturalBeautyBounceBack.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/BeautyBBThumb_V3.jpg"/>
+              <p class="imgDescription">natural beauty bounce back</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="MothersDayEvent.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/MothersDayThumb_V3.jpg"/>
+              <p class="imgDescription">mother's day event</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="ReferAFriend.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/RAFThumb_V3.jpg"/>
+              <p class="imgDescription">refer a friend</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="SephoraSignage.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/SephoraSignageThumb_V3.jpg"/>
+              <p class="imgDescription">sephora signage</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="imgWrap">
+          <a href="PeonyLipPosts.html">
+            <img class="thumbnail" src="include/img/gallery/thumbnails/PeonyLipBalm_thumb.jpg"/>
+            <p class="imgDescription">peony lip balm social posts</p>
+          </a>
+        </div>
+      </figure>
+
+      <figure class="gallery-item">
+        <div class="imgWrap">
+          <a href="Holiday.html">
+            <img class="thumbnail" src="include/img/gallery/thumbnails/Cedrat.jpg"/>
+            <p class="imgDescription">holiday social posts</p>
+          </a>
+        </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="PoblanoPublication.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/PoblanoPublication_thumb_V3.jpg"/>
+              <p class="imgDescription">poblano digital publication</p>
+            </a>
+          </div>
+      </figure>
+
+      <figure class="gallery-item">
+          <div class="imgWrap">
+            <a href="LovePublication.html">
+              <img class="thumbnail" src="include/img/gallery/thumbnails/LoveAd_thumb.jpg"/>
+              <p class="imgDescription">valentine's digital ad</p>
+            </a>
+          </div>
+      </figure>
+
+    </div>
+
+    <!-- back-to-top arrow -->
+
+    <a href="#"><img class="back-to-top" src="include/img/logos/Arrow.png"/></a>
+
+
+
+    </div>
+
   </body>
