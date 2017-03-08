@@ -4,37 +4,117 @@ $(document).ready(function(){
 
   // ------------ Back to top button ---------------
 
-  jQuery(document).ready(function() {
+  $(document).ready(function() {
 
 var offset = 250;
 
 var duration = 300;
 
-jQuery(window).scroll(function() {
 
-if (jQuery(this).scrollTop() > offset) {
+$(window).scroll(function() {
 
-jQuery(".back-to-top").fadeIn(duration);
+    if ($(this).scrollTop() > offset) {
 
-} else {
+        $(".back-to-top").fadeIn(duration);
 
-jQuery(".back-to-top").fadeOut(duration);
+    } else {
 
-}
+        $(".back-to-top").fadeOut(duration);
+
+    }
 
 });
 
-jQuery(".back-to-top").click(function(event) {
+$(".back-to-top").click(function(event) {
 
-event.preventDefault();
+    event.preventDefault();
 
-jQuery("html, body").animate({scrollTop: 0}, duration);
+    $("html, body").animate({scrollTop: 0}, duration);
 
-return false;
+    return false;
 
 })
 
 });
+
+
+//-------- landing elements -----------
+
+// $(window).scroll(function() {
+//
+//     var wScroll = $(this).scrollTop();
+//
+//     if(wScroll > $('.gallery-item').offset().top - ($(window).height() / 1.5)) {
+//         $(".gallery-item").each(function(i){
+//             setTimeout(function(){
+//                 $(".gallery-item").eq(i).addClass("is-showing");
+//             }, 150 * (i+1));
+//         });
+//     };
+//
+//     if(wScroll > $(imgContainer).offset().top - ($(window).height() / 1.5)) {
+//         $(imgContainer).each(function(i){
+//             setTimeout(function(){
+//                 $(imgContainer).eq(i).addClass("is-showing");
+//             }, 150 * (i+1));
+//         });
+//     };
+//
+// });
+
+
+// Toggle landind elements of the given imgContainer
+
+var toggleShowing = function(imgContainer){
+    $(window).scroll(function() {
+      var wScroll = $(this).scrollTop();
+      if(wScroll > $(imgContainer).offset().top - ($(window).height() / 1.3)) {
+          $(imgContainer).each(function(i){
+              setTimeout(function(){
+                  $(imgContainer).eq(i).addClass("is-showing");
+              }, 120 * (i+1));
+          });
+      };
+    });
+}
+
+
+// If we are on the home page select 'gallery-item'
+// otherwise we need to select spread-images
+if (location.pathname.substring(1) == 'index.html'){
+  toggleShowing('.gallery-item');
+} else {
+  toggleShowing('.work-image');
+  toggleShowing('.work-image-large');
+}
+
+//-------------  masonry layout ------------
+
+// $(function(){
+//
+//     var spreads = $('#spreads');
+//
+//     spreads.imagesLoaded(function(){
+//         spreads.masonry({
+//             itemSelector : '.header-image'
+//         });
+//     });
+// });
+
+//-------------  remove blank divs on mobile ------------
+
+var bhi = $(".blank-header-image"),
+    rbhi = $(".remove-blank-header-image");
+
+
+// if( typeof window.orientation !== 'undefined' ) {
+//   console.log('active');
+//   bhi.addClass(rbhi);
+// } else {
+//   bhi.removeClass(rbhi);
+// }
+
+bhi.addClass(rbhi);
 
 //-------------  sticky nav  ---------------
 
@@ -43,7 +123,7 @@ var ll = $(".landing-logo"),
     ldi = $(".landing-image").height();
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() >= ldi / 2) {
+  if( $(this).scrollTop() >= ldi / 2.7) {
     ll.addClass(lls);
   } else {
     ll.removeClass(lls);
@@ -65,6 +145,8 @@ $(window).scroll(function() {
     gallery.removeClass(galpad);
   }
 });
+
+
 
 
   /*$(".modal, .modal-background").click(function() {
@@ -103,3 +185,12 @@ $(window).scroll(function() {
 		}
 	}
 }*/
+
+//-------------  load img  ---------------
+
+$(document).ready(function() {
+
+$(".header-image-fade").fadeIn();
+
+
+});
