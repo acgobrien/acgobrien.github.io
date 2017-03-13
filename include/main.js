@@ -81,7 +81,8 @@ var toggleShowing = function(imgContainer){
 
 // If we are on the home page select 'gallery-item'
 // otherwise we need to select spread-images
-if (location.pathname.substring(1) == 'index.html'){
+var curPage = location.pathname.substring(1);
+if ( curPage == 'index.html' || curPage == ''){
   toggleShowing('.gallery-item');
 } else {
   toggleShowing('.work-image');
