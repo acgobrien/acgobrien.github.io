@@ -38,29 +38,10 @@ $(".back-to-top").click(function(event) {
 });
 
 
+
+
 //-------- landing elements -----------
 
-// $(window).scroll(function() {
-//
-//     var wScroll = $(this).scrollTop();
-//
-//     if(wScroll > $('.gallery-item').offset().top - ($(window).height() / 1.5)) {
-//         $(".gallery-item").each(function(i){
-//             setTimeout(function(){
-//                 $(".gallery-item").eq(i).addClass("is-showing");
-//             }, 150 * (i+1));
-//         });
-//     };
-//
-//     if(wScroll > $(imgContainer).offset().top - ($(window).height() / 1.5)) {
-//         $(imgContainer).each(function(i){
-//             setTimeout(function(){
-//                 $(imgContainer).eq(i).addClass("is-showing");
-//             }, 150 * (i+1));
-//         });
-//     };
-//
-// });
 
 
 // Toggle landind elements of the given imgContainer
@@ -80,7 +61,7 @@ var toggleShowing = function(imgContainer){
 
 
 // If we are on the home page select 'gallery-item'
-// otherwise we need to select spread-images
+// otherwise we need to select work-images and work-image-large
 var curPage = location.pathname.substring(1);
 if ( curPage == 'index.html' || curPage == ''){
   toggleShowing('.gallery-item');
@@ -89,109 +70,68 @@ if ( curPage == 'index.html' || curPage == ''){
   toggleShowing('.work-image-large');
 }
 
-//-------------  masonry layout ------------
-
-// $(function(){
-//
-//     var spreads = $('#spreads');
-//
-//     spreads.imagesLoaded(function(){
-//         spreads.masonry({
-//             itemSelector : '.header-image'
-//         });
-//     });
-// });
-
-//-------------  remove blank divs on mobile ------------
-
-var bhi = $(".blank-header-image"),
-    rbhi = $(".remove-blank-header-image");
-
-
-// if( typeof window.orientation !== 'undefined' ) {
-//   console.log('active');
-//   bhi.addClass(rbhi);
-// } else {
-//   bhi.removeClass(rbhi);
-// }
-
-bhi.addClass(rbhi);
 
 //-------------  sticky nav  ---------------
 
-var ll = $(".landing-logo"),
-    lls = "landing-logo-scroll",
-    ldi = $(".landing-image").height();
+var pageLogo = $(".landing-logo"),
+    logoScrollLock = "landing-logo-scroll",
+    logoHeight = $(".landing-image").height();
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() >= ldi / 2.7) {
-    ll.addClass(lls);
+
+  // Locks the pageLogo when user scrolls to 45%
+  // the length of the web page
+  if( $(this).scrollTop() / $(this).height() >= .45) {
+    pageLogo.addClass(logoScrollLock);
   } else {
-    ll.removeClass(lls);
+    pageLogo.removeClass(logoScrollLock);
   }
 });
 
-var nv = $("#nav"),
-    nvs = "nav-scroll",
+var navBar = $("#nav"),
+    navScrollLock = "nav-scroll",
     gallery = $(".gallery"),
-    galpad = "gallery-padding";
+    galleryPadding = "gallery-padding";
 
 $(window).scroll(function() {
 
-  if( $(this).scrollTop() > ldi * 1) {
-    nv.addClass(nvs);
-    gallery.addClass(galpad);
+  if( $(this).scrollTop() > logoHeight) {
+    navBar.addClass(navScrollLock);
+    gallery.addClass(galleryPadding);
   } else {
-    nv.removeClass(nvs);
-    gallery.removeClass(galpad);
+    navBar.removeClass(navScrollLock);
+    gallery.removeClass(galleryPadding);
+  }
+});
+
+
+//---------------- resize landing image for mobile -----------------
+
+var landingDiv = $("#landing-background-img"),
+    landingImage = "landing-image",
+    landingImageMobile = "landing-mobile-image";
+
+$(window).ready(function() {
+
+  if( $(window).width() <= 800) {
+    console.log(landingDiv);
+    landingDiv.removeClass(landingImage);
+    landingDiv.addClass(landingImageMobile);
+  } else {
+    landingDiv.removeClass(landingImageMobile);
+    landingDiv.addClass(landingImage);
   }
 });
 
 
 
-
-  /*$(".modal, .modal-background").click(function() {
-
-    // Lock the scroll bar while the modal is active
-    $("body").toggleClass("scroll-locked");
-    $(this).find(".modal-content, .modal-background").toggleClass("active");
-
-    // Center the modal
-    var offset = $(document).scrollTop();
-    var viewportHeight = $(window).height();
-
-    // Position the modal relative to the scroll location
-    var modal = $(this).find(".modal-content");
-    left = Math.max($(window).width() - modal.outerWidth(), 0) / 2;
-    modal.css({
-      top: $(window).scrollTop() + 70,
-      left:left + $(window).scrollLeft()
-    });
-  });*/
-
-});
-
-//============= Mobile ==============
-
-
-	/*if( windowWidth <= 640 ) {
-		if( $("grid-item").length > 0 ) {
-			mobileMenuClone.insertAfter("#menu");
-			$("#navigation-mobile #menu-nav").attr("id", "menu-nav-mobile");
-		}
-	} else {
-		$("#navigation-mobile").css("display", "none");
-		if ($("#mobile-nav").hasClass("open")) {
-			$("#mobile-nav").removeClass("open");
-		}
-	}
-}*/
-
-//-------------  load img  ---------------
-
-$(document).ready(function() {
-
-$(".header-image-fade").fadeIn();
-
+//-------- found online ----------
+// $(function() {
+//   if($(window).width() <= 610) {
+//     $("img").each(function() {
+//       $(this).attr("src", $(this).attr("src").replace("images/620x410/", "images/310x205/"));
+//     });
+//   }
+// });
 
 });

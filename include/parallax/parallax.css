@@ -4,11 +4,11 @@ body {
   color: #B6B6B7;
   letter-spacing: 1px;
   text-align: center;
-  font-style: normal;
   font-weight: 100;
-  line-height: 1.45;
-  overflow-x: hidden;
-  width: 100%;
+  /*font-style: normal;*/
+  /*line-height: 1.45;
+  overflow-x: hidden;*/
+  /*width: 100%;*/
 
   /* Force the page to 100% width
   This sweeps the real problem under the rug...
@@ -25,6 +25,8 @@ body {
   text-align: center;
   z-index: 0;
   width: 100%;
+  left: 0;
+  /*margin: 0 0 10px 0;*/
 }
 
 #nav {
@@ -79,12 +81,24 @@ li {
 
 .landing-image {
   position: relative;
-  height: 804px;
+  vertical-align: middle;
+  height: 1100px;
   background-image: url("/include/img/landing/parallax/LandingPage_1280w.jpg");
   background-size: auto 600px;
-  background-position: top center;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.landing-mobile-image {
+  position: relative;
+  vertical-align: middle;
+  height: 1100px;
+  background-image: url("/include/img/landing/parallax/LandingPage_800w.jpg");
+  background-size: auto 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .landing-logo {
@@ -94,9 +108,8 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 20em;
+  top: 50%;
   left: 0;
-  margin-left: .5em;
   z-index: 150;
 }
 
@@ -104,7 +117,6 @@ li {
   position: fixed;
   top: 1em;
   left: 0;
-
 }
 
 /*--- thumbnails ---*/

@@ -20,23 +20,43 @@ body {
     margin-bottom: 3px;
     height: 7.5em;
     width: 100%;
-    margin-left: .5em;
     background-color: white;
     position: fixed;
     z-index: 3;
+
+    /*height: 64px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: fixed;
+    padding-top: 21px;
+    left: 0;
+    background-color: white;*/
 }
 
 #nav {
   font-size: 1em;
   text-align: center;
   margin-top: 87px;
-  margin-left: .4em;
   background-color: white;
   padding-left: .1em;
   padding-right: 0em;
   position: fixed;
   width: 100%;
   z-index: 4;
+
+    /*position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 1em;
+    z-index: 1;
+    margin-top: 85px;
+    background-color: white;
+    height: 3.25em;
+    padding-top: 2px;*/
 }
 
 ul {
