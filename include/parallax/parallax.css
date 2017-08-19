@@ -102,9 +102,9 @@ li {
 }
 
 .landing-logo {
-  height: 64px;
+  height: 59px;
   width: 100%;
-  background-image: url("/include/img/landing/Logo.png");
+  background-image: url("/include/img/landing/parallax/PNG/Logo.png");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
