@@ -68,6 +68,7 @@ if ( curPage == 'index.html' || curPage == ''){
 } else {
   toggleShowing('.work-image');
   toggleShowing('.work-image-large');
+  toggleShowing('.work-image-medium');
 }
 
 
