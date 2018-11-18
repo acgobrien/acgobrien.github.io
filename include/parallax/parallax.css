@@ -62,7 +62,7 @@ li {
 .nav-words-active {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 17px;
-  color: #686868;
+  color: #000000;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -70,7 +70,7 @@ li {
 .nav-words{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   font-size: 17px;
-  color: #B6B6B7;
+  color: #252B33;
   text-decoration: none;
   font-weight: 100;
 }
